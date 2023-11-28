@@ -144,7 +144,7 @@ function setWinner(row,col){
 function checkTie(board) {
     if (isBoardFull(board)) {
         winner.innerText = "TIE!";
-        winner.style.color="black";
+        winner.style.color="red";
         gameOver = true;
         setTimeout(resetBoard,3000);
     }
